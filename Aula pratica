@@ -1,0 +1,61 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        protected static void conditionStatement()
+        {
+            int x = 30, y = 40,z;
+            z = x - y + 5;
+            if(z == 70) {
+                Console.WriteLine("Value of z is 70");
+            }
+            else if(z > 70)
+            {
+                Console.WriteLine("Value of z is greater than 70");
+            }
+            else
+            {
+                Console.WriteLine("Value of z is less than 70");
+            }   
+        }
+        protected static void ternaryOperator(){
+            int x =10, y = 35;
+            string result;
+            result = x > y ? "x is greater than y" : "x is less than or equal to y";
+            Console.WriteLine(result);
+        }
+
+        protected static void whileLoop()
+        {
+            int x = 0;
+            while (x<20) {
+                Console.WriteLine("value of x is " + x );
+                x++;
+            }            
+        }
+        protected static void userInput() {
+
+            double x, y, result;
+            Console.WriteLine("Please entry number");
+            x = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Please another number");
+            y = Convert.ToDouble(Console.ReadLine());
+            //y = x*Math.PI;
+            result = x * y;
+            Console.WriteLine("The result is:" + result);
+        }
+        static void Main(string[] args){
+
+            //userInput();
+            //conditionStatement();
+            whileLoop();
+
+        }
+    }
+}
