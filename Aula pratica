@@ -39,6 +39,13 @@ namespace ConsoleApplication2
                 x++;
             }            
         }
+
+        protected static void forLoop()
+        {
+            for(int i = 2; i < 10; i++){
+                Console.WriteLine("value of x is " + i);
+            }
+        }
         protected static void userInput() {
 
             double x, y, result;
@@ -54,7 +61,8 @@ namespace ConsoleApplication2
 
             //userInput();
             //conditionStatement();
-            whileLoop();
+            //whileLoop();
+            forLoop();
 
         }
     }
