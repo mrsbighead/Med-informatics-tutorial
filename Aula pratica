@@ -46,6 +46,18 @@ namespace ConsoleApplication2
                 Console.WriteLine("value of x is " + i);
             }
         }
+
+        protected static void sumOfEvenNumbers(){
+            int sum = 0;
+            for (int i = 1; i < 50; i++)
+            {
+                if (i%2 == 0)
+                {
+                    sum = sum + i;
+                }
+            }
+            Console.WriteLine("the sum of even numbers is " + sum);
+        }
         protected static void userInput() {
 
             double x, y, result;
@@ -62,8 +74,8 @@ namespace ConsoleApplication2
             //userInput();
             //conditionStatement();
             //whileLoop();
-            forLoop();
-
+            //forLoop();
+            sumOfEvenNumbers();
         }
     }
 }
